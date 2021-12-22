@@ -243,6 +243,8 @@ type ApplicationSourceHelm struct {
 	Version string `json:"version,omitempty" protobuf:"bytes,6,opt,name=version"`
 	// PassCredentials pass credentials to all domains (Helm's --pass-credentials)
 	PassCredentials bool `json:"passCredentials,omitempty" protobuf:"bytes,7,opt,name=passCredentials"`
+	// SkipCrds skips custom resource definition installation step (Helm's --skip-crds)
+	SkipCrds bool `json:"skipCrds,omitempty" protobuf:"bytes,8,opt,name=skipCrds"`
 }
 
 // HelmParameter is a parameter that's passed to helm template during manifest generation
